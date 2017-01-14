@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>WeHousing</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+      <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">       
+       <link rel = " stylesheet " type = " text/css " href = "sheet.css"/>
+       
+   </head>
+   <body>
+       <div class="container">
+           <div class="content">
+               <div class="header">
+                   <h2>Minneapolis, MN: 12 Apartments</h2>
+                   <div class="filter">
+                    <button type="button" class="btn" id="btn1" onclick="btnSort2()">Popularity</button>
+                    <button type="button" class="btn" id="btn2" onclick="btnSort1()">Price</button>
+                   </div>
+               </div>
+               <div class="row">
+                    <div class="col-xs-12" >
+                        
+                        <div id="tab1" class="tab col-xs-12">
+                            <img src="" id="img1" class="img-responsive col-xs-5">
+                            <div class="description col-xs-7">
+                                <h1 class="title" id="name1" data-toggle="modal" data-target="#myModal" onclick="detialView(this)" value="1">Name</h1>
+                                <p class="address" id="address1">address</p>
+                                <div class="price">
+                                    From
+                                    <h1 class="value">$</h1>
+                                    <h1 class="value" id="price1">$</h1>
+                                    <div class="unit">USD/Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab2" class="tab col-xs-12">
+                            <img src="" id="img2" class="img-responsive col-xs-5">
+                            <div class="description col-xs-7">
+                                <h1 class="title" id="name2" data-toggle="modal" data-target="#myModal" onclick="detialView(this)" value="2">Name</h1>
+                                <p class="address" id="address2">address</p>
+                                <div class="price">
+                                    From
+                                    <h1 class="value">$</h1>
+                                    <h1 class="value" id="price2">$</h1>
+                                    <div class="unit">USD/Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab3" class="tab col-xs-12">
+                            <img src="" id="img3" class="img-responsive col-xs-5">
+                            <div class="description col-xs-7">
+                                <h1 class="title" id="name3"  data-toggle="modal" data-target="#myModal" onclick="detialView(this)" value="3">Name</h1>
+                                <p class="address" id="address3">address</p>
+                                <div class="price">
+                                    From
+                                    <h1 class="value">$</h1>
+                                    <h1 class="value" id="price3">$</h1>
+                                    <div class="unit">USD/Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab4" class="tab col-xs-12">
+                            <img src="" id="img4" class="img-responsive col-xs-5">
+                            <div class="description col-xs-7">
+                                <h1 class="title" id="name4"  data-toggle="modal" data-target="#myModal" onclick="detialView(this)" value="4">Name</h1>
+                                <p class="address" id="address4">address</p>
+                                <div class="price">
+                                    From
+                                    <h1 class="value">$</h1>
+                                    <h1 class="value" id="price4">$</h1>
+                                    <div class="unit">USD/Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab5" class="tab col-xs-12">
+                            <img src="" id="img5" class="img-responsive col-xs-5">
+                            <div class="description col-xs-7">
+                                <h1 class="title" id="name5"  data-toggle="modal" data-target="#myModal" onclick="detialView(this)" value="5">Name</h1>
+                                <p class="address" id="address5">address</p>
+                                <div class="price">
+                                    From
+                                    <h1 class="value">$</h1>
+                                    <h1 class="value" id="price5">$</h1>
+                                    <div class="unit">USD/Month</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="pagination">
+                    <button class="btn" onclick="changeApt1()">1</button>
+                    <button class="btn" onclick="changeApt2()">2</button> 
+                   <button class="btn" onclick="changeApt3()">3</button> 
+               </div>
+            </div>
+        </div>
+       
+      
+       
+       <!-- Modal -->
+       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-lg">
+               <div class="modal-content">            
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h1 class="title" id="inname">Name</h1>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" id="inimg" class="img-responsive col-xs-12">
+                        <h4 class="address" id="inaddress">address</h4>
+                         <div>                                 
+                            <h1 class="invalue">$</h1>
+                            <h1 class="invalue" id="inprice">xx</h1>
+                            <div class="inunit">USD/Month</div>
+                        </div>                        
+                    </div>            
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+       </div>    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="info.js"></script>
+       
+   </body>
+</html>
